@@ -11,32 +11,33 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
-<body style="background-color: brown;">
-    <form autocomplete="on" class="text-center">
-        
+<body style="background-color: brown;"  class="text-center">
+    <form name="calculator" class="calculator">
+   <!-- input field-->  
         <fieldset>
-            <legend>CALCULATOR</legend>
-            <div style="border: 2px solid grey;width: 30%;margin: auto;padding: 20px;">
+            <legend style="font-size: x-large; color: white;">CALCULATOR</legend>
+            <div style="border: 2px solid grey;width: 30%;margin: auto;padding: 20px;background-color: chocolate;" >
+
         <label for="number">Input number</label> <br>
-        <input type="number" name="first number" id="firstname" placeholder="Enter a number" required><br>
+         <input type="text" id="firstNumber"/><br>
         <label for="Lastname">Input number</label> <br>
-        <input type="text" name="Lastname" id="Lastname" placeholder="Enter a number" required><br><br>
-
+        <input type="text" id="secondNumber"/><br>
+<!-- operators-->
 <div class="operator">
-<input type="button" name="addition" id="addition" value="+">
-<input type="button" name="subtraction" id="subtraction" value="-">
-<input type="button" name="division" id="division" value="/">
-<input type="button" name="multiplication"  id="multiplication" value="*">
-<input type="button" name="modulus"  id="modulus" value="%">
-<input type="button" name="equal to"  id="equal to" value="=">
-</div>
-</div>
-    </fieldset>
-    
+<input type="button" onclick="multiplyBy()" value="Multiply"/>
+<input type="button" onclick="divideBy()" value="Divide"/>
+<input type="button" onclick="additionBy()" value="Add"/>
+<input type="button" onclick="subtractBy()" value="Subtract"/>
+<input type="button" onclick="modulusBy()" value="modulus"/>
 
-        
+    </div>
+    <p>The Result is : <br>
+        <span id="Result"></span>
+        </p>
+
+</fieldset>
     </form>
-
+   
 </body>
     
 </body>
