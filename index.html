@@ -11,17 +11,18 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 
 </head>
-<body style="background-color: brown;"  class="text-center">
-    <form name="calculator" class="calculator">
+<body style="background-color: brown; border: 5px solid gray;width: 50%;margin: auto;margin-top: 7%"  class="text-center">
+    
+    <form name="calculator">
    <!-- input field-->  
         <fieldset>
-            <legend style="font-size: x-large; color: white;">CALCULATOR</legend>
-            <div style="border: 2px solid grey;width: 30%;margin: auto;padding: 20px;background-color: chocolate;" >
+            <legend style="font-size: xx-large; padding-top: 7%; color: white;">CALCULATOR</legend>
+        
 
         <label for="number">Input number</label> <br>
          <input type="text" id="firstNumber"/><br>
         <label for="Lastname">Input number</label> <br>
-        <input type="text" id="secondNumber"/><br>
+        <input type="text" id="secondNumber"/><br><br>
 <!-- operators-->
 <div class="operator">
 <input type="button" onclick="multiplyBy()" value="Multiply"/>
@@ -31,8 +32,8 @@
 <input type="button" onclick="modulusBy()" value="modulus"/>
 
     </div>
-    <p>The Result is : <br>
-        <span id="Result"></span>
+    <p style="font-size: x-large;">The Result is : <br>
+       <button type="text" class="btn" > <span id="Result" style="color: tomato;"></span></button>
         </p>
 
 </fieldset>
