@@ -26,25 +26,42 @@ $("#addition").submit()
   function multiplyBy() {
      let num1=  parseInt(document.getElementById("firstNumber").value);
      let num2=  parseInt(document.getElementById("secondNumber").value);
-      document.getElementById("Result").innerHTML=num1*num2;
+     // how to refresh a page
+     $("#firstNumber").val("")
+     $("#secondNumber").val("")
+      document.getElementById("Result").innerHTML=num1*num2 ||0;
+      
   }
+
   function divideBy() {
    let num1=  parseInt(document.getElementById("firstNumber").value);
    let num2=  parseInt(document.getElementById("secondNumber").value);
-    document.getElementById("Result").innerHTML=num1/num2;
+     // how to refresh a page
+     $("#firstNumber").val("")
+     $("#secondNumber").val("")
+    document.getElementById("Result").innerHTML=num1/num2 ||0;
 }
 function additionBy() {
     let num1= parseInt(document.getElementById("firstNumber").value);
     let num2= parseInt(document.getElementById("secondNumber").value);
-     document.getElementById("Result").innerHTML=num1+num2;
+      // how to refresh a page
+      $("#firstNumber").val("")
+      $("#secondNumber").val("")
+     document.getElementById("Result").innerHTML=num1+num2 ||0;
  }
  function subtractBy() {
     let num1=  parseInt(document.getElementById("firstNumber").value);
     let num2=  parseInt(document.getElementById("secondNumber").value);
-     document.getElementById("Result").innerHTML=num1-num2;
+      // how to refresh a page
+      $("#firstNumber").val("")
+      $("#secondNumber").val("")
+     document.getElementById("Result").innerHTML=num1-num2 ||0;
  }
  function modulusBy() {
     let num1=  parseInt(document.getElementById("firstNumber").value);
     let num2=  parseInt(document.getElementById("secondNumber").value);
-     document.getElementById("Result").innerHTML=num1%num2;
+      // how to refresh a page
+      $("#firstNumber").val("")
+      $("#secondNumber").val("")
+     document.getElementById("Result").innerHTML=num1%num2 ||0;
  }
